@@ -1,0 +1,43 @@
+\documentclass{Manual}  %请保证文件与Manual.cls文件处于同一文件夹中
+
+%%%%%%%%%%%%%%%%%%填写软件基本信息%%%%%%%%%%%%%%%%%%
+\newcommand{\Name}{我的软件名称}  %软件名称
+\newcommand{\version}{v1.0.0}   %软件版本
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\fancyhead[L]{\Name \version}
+\fancyhead[R]{\today}
+\title{\bf{使用手册}}
+\author{\bf{\Name}}
+\date{\version}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%内容区%%%%%%%%%%%%%%%%%%%%%%%
+%这部分请移步对应的tex文件编写
+\section{设计说明}
+\input{./1_design.tex}
+\section{运行环境}
+\input{./2_environment.tex}
+\section{操作说明}
+\input{./3_function.tex}
+\section{注意事项}
+\input{./4_nots.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%% 开源信息（正式使用时请删除此部分） %%%%%%%%%%%%%%
+\newpage
+\section*{附录：项目来源与开源地址（编写者阅读后请移除）}
+\addcontentsline{toc}{section}{附录：项目来源与开源地址（编写者阅读后请移除）}
+本文档模板开源，源代码托管于以下平台：
+
+\begin{itemize}
+    \item \href{https://cn.overleaf.com/read/fcvcbxycqkrt\#067a4d}{\texttt{Overleaf 项目地址}}
+    \item \href{https://github.com/liyizenb/Softwar-Manual-Template}{\texttt{GitHub 项目地址}}
+\end{itemize}
+
+作者：李奕贝贝 {\small \textcolor{gray}{(中国农业大学数学233)}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
